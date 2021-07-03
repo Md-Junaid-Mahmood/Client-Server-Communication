@@ -1,4 +1,4 @@
-### <div align = "center"> Client Server Communication  </div>
+# <div align = "center"> Client Server Communication  </div>
 The repository holds the project work that I did on Client-Server Commumnication Model using Socket Programming under the guidance of IIT Roorkee ACM Student Chapter.
 
 ---
