@@ -1,4 +1,4 @@
-## <div align = "center"> Client Server Communication  </div>
+### <div align = "center"> Client Server Communication  </div>
 The repository holds the project work that I did on Client-Server Commumnication Model using Socket Programming under the guidance of IIT Roorkee ACM Student Chapter.
 
 ---
@@ -15,7 +15,7 @@ There must be a set of standard protocols that supported by Client-side and Serv
 
 ---
 
-## <div align = "right"> How To Run </div>
+## <div align = "left"> How To Run </div>
 In order to run the code JAVA Compiler must be installed into the system.
 
 1. Download the source code or clone the GitHub repository.
