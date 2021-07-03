@@ -3,7 +3,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
-public class Client {
+public class Client{
     public static void main(String[] args) {
         int port = 8000;
         String serverAddress = "localHost";
@@ -20,7 +20,7 @@ public class Client {
             }
         }
 
-        try {
+        try{
             DatagramSocket clientSocket = new DatagramSocket();
             byte dataSent[] = new byte[256];
             byte dataReceived[] = new byte[256];

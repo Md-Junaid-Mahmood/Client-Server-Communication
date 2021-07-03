@@ -14,7 +14,7 @@ public class Server{
             System.out.println("Server Successfully Started at default Port: " + port);
         }
 
-        try {
+        try{
             DatagramSocket serverSocket = new DatagramSocket(port);
             byte dataReceived[] = new byte[256];
             byte dataSent[] = new byte[256];
