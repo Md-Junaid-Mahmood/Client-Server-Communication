@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class Client {
+public class Client{
     public static void main(String[] args){
         String server;
         int port;

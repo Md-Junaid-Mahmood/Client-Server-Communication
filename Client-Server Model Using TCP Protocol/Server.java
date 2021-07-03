@@ -57,8 +57,17 @@ public class Server{
                         continue;
                     }else{
                         String operator = arr[0];
-                        int x = Integer.parseInt(arr[1]);
-                        int y = Integer.parseInt(arr[2]);
+                        int x, y;
+                        try {
+                            x = Integer.parseInt(arr[1]);
+                            y = Integer.parseInt(arr[2]);
+                        } catch (Exception e) {
+                            String result = "Incorrect Operand Type";
+                            inititalOutput.writeUTF(result);
+                            System.out.println(result);
+                            continue;
+                        }
+                        
 
                         int z;
                         if(operator.equalsIgnoreCase("ADD")){
