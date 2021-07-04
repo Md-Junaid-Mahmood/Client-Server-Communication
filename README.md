@@ -57,9 +57,16 @@ With this the required connection between Client and Server is established and t
 ## <div align = "left"> Features Implemented </div>
 Following features were implemented in the project:
 
-1. Communication between Client-side and Server-side using both TCP/IP and UDP protocols. Corresponding code under each protocol is present in seperate directories. Necessary details of the port on which server would be created is passed as a command line arguments. Although passing details of the port is optional. For instance, 'javac Server' would bound the server socket to default port 8000. On other hand, 'javac Server 8080' would bound the server socket to port 8080.
+1. Communication between Client-side and Server-side using both TCP/IP and UDP protocols. Corresponding code under each protocol is present in seperate directories. Necessary details of the port on which server would be created is passed as a command line arguments. Although passing details of the port is optional. For instance, `javac Server` would bound the server socket to default port 8000. On other hand, `javac Server 8080` would bound the server socket to port 8080.
 2. Server written under both the protocols is capable of doing two distinct things based on user's choice.
     - Server can be used for doing normal communication, that is, transfer of simple textual messages from both sides.
     - Server can be used for performing rudimentary arithmetic operations.
 3. At present only four types of arithmetic operations are supported by the server, which are addition, substraction, multiplication and division. For each arithmetic operations, exactly two operands must be given. For example, ADD 4 6 is a valid expression. Details about the format for arithmetic expressions is provided to the client at runtime.
 4. Both Client-side and Server-side is capable of terminating the connection by sending "Exit" message. 
+
+## <div align = "left"> Future Goals </div>
+Following is the list of the things that can be added to make the project more robust.
+
+1. At present only four arithmetic operations are supported by the Server-side. It can be furthur enhanced to include features like evaluation of a mathematical expression involving multiple such arithmetic operations.
+2. At present only one client can connect to the server at a time. Furthur development can be made to connect multiple clients to the server simultaneously so that the requirement of each client can be satisfied efficiently.
+3. In addition, multiple clients can also be connected to the server in such a way that they can send messages to each other through the central server.
