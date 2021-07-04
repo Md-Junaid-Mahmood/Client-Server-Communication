@@ -52,3 +52,13 @@ cd Client-Server Model Using UDP Protocol
   ```
   
 With this the required connection between Client and Server is established and they can communicate among each other.
+
+## <div align = "left"> Features Implemented </div>
+Following features were implemented in the project:
+
+1. Communication between Client-side and Server-side using both TCP/IP and UDP protocols. Corresponding code under each protocol is present in seperate directories.
+2. Server written under both the protocols is capable of doing two distinct things based on user's choice.
+    - Server can be used for doing normal communication, that is, transfer of simple textual messages from both sides.
+    - Server can be used for performing rudimentary arithmetic operations.
+3. At present only four types of arithmetic operations are supported by the server, which are addition, substraction, multiplication and division. For each arithmetic operations, exactly two operands must be given. For example, ADD 4 6 is a valid expression. Details about the format for arithmetic expressions is provided to the client at runtime.
+4. Both Client-side and Server-side is capable of terminating the connection by sending "Exit" message. 
