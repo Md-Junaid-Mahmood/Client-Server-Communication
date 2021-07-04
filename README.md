@@ -3,6 +3,7 @@ The repository holds the project work that I did on Client-Server Commumnication
 
 ---
 
+## <div align = "left"> Introduction </div>
 Any kind of communication involves following two entities:
 
 - **Client** - Client is a system that is requesting for a connection and services of the another system.
@@ -51,12 +52,12 @@ cd Client-Server Model Using UDP Protocol
   java Client localHost 8000
   ```
   
-With this the required connection between Client and Server is established and they can communicate among each other.
+With this the required connection between Client and Server is established and they can communicate among each other. Furthur, details about the format for writing messages and other necessary stuffs are provided to the client at runtime.
 
 ## <div align = "left"> Features Implemented </div>
 Following features were implemented in the project:
 
-1. Communication between Client-side and Server-side using both TCP/IP and UDP protocols. Corresponding code under each protocol is present in seperate directories.
+1. Communication between Client-side and Server-side using both TCP/IP and UDP protocols. Corresponding code under each protocol is present in seperate directories. Necessary details of the port on which server would be created is passed as a command line arguments. Although passing details of the port is optional. For instance, 'javac Server' would bound the server socket to default port 8000. On other hand, 'javac Server 8080' would bound the server socket to port 8080.
 2. Server written under both the protocols is capable of doing two distinct things based on user's choice.
     - Server can be used for doing normal communication, that is, transfer of simple textual messages from both sides.
     - Server can be used for performing rudimentary arithmetic operations.
